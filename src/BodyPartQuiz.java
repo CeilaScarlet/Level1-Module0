@@ -31,29 +31,59 @@ public class BodyPartQuiz {
 	private void startQuiz() {
 
 		// 1. Make an int variable to hold the score.
+		int score = 0;
 
 		// 2. Set the size of the window in the initializeGui() method below
 
-		for (int i = 0; i < 4; i++) {
+		
 			
 			// 4. Ask the user who this person is and store their answer
 			String guess= JOptionPane.showInputDialog("who is this?");
 			
 			// 5. Check their answer. If they guessed correctly:
 			// -- Tell them they are right and increase the score by 1
-
+			if (guess.equalsIgnoreCase("Arnold")) {
+			JOptionPane.showMessageDialog(null, "You're Correct!!!");
+				int scorer = score +1;
+			}
 			// 6. Otherwise:
 			// -- Tell them they are wrong and who the person is
-
+			else {
+				JOptionPane.showMessageDialog(null, "You're Wrong!!! :(");
+				JOptionPane.showMessageDialog(null, "He's Arnold Schwarzenegger");
+			}
 			// 7. Use the showNextImage() method below to get the next image
 			showNextImage();
 		    // 8. Show them their current score
-			
+			JOptionPane.showMessageDialog(null, score);
 			// 9. .... repeat for all your images.....
 
-
-		}
-
+			String guess1 = JOptionPane.showInputDialog("who is this?");
+			if (guess1.equalsIgnoreCase("Leonardo")) {
+				JOptionPane.showMessageDialog(null, "You're Correct!!!");
+					int scorer;
+					int scoreo = scorer +1;
+				}
+			else {
+				JOptionPane.showMessageDialog(null, "You're Wrong!!! :(");
+				JOptionPane.showMessageDialog(null, "He's Leonardo DiCaprio");
+			}
+			showNextImage();
+			JOptionPane.showMessageDialog(null, score);
+			
+			String guess2 = JOptionPane.showInputDialog("who is this?");
+			if (guess1.equalsIgnoreCase("Leonardo")) {
+				JOptionPane.showMessageDialog(null, "You're Correct!!!");
+					
+					int scoreo;
+					int scores = scoreo +1;
+				}
+			else {
+				JOptionPane.showMessageDialog(null, "You're Wrong!!! :(");
+				JOptionPane.showMessageDialog(null, "He's Leonardo DiCaprio");
+			}
+			showNextImage();
+			JOptionPane.showMessageDialog(null, score);
 	}
 
 	public void showNextImage() {

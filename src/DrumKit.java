@@ -11,6 +11,7 @@ import java.awt.event.MouseListener;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import javax.print.attribute.standard.Sides;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JApplet;
@@ -56,6 +57,7 @@ ri.setLayout(new GridLayout());
    	 si.pack();
    	 // 13. add this mouse listener to drumLabelWithImage
   drumLabelWithImage.addMouseListener(this);
+  si.pack();
      	 // 18. Add more images to make a drumkit. Remember to add this mouse listener to each one.
 
     }
@@ -68,8 +70,8 @@ System.out.println("mouse clicked");
    	 // 15. Download a drum sound and drop it into your "default package". You can find it on freesound.org. To download it, log in as leagueofamazing/code4life.
    	 // 16. If they clicked on the drumImage...
 String sound = "DSound.wav";
-if () {
-	
+if (drumClicked == drumLabelWithImage) {
+	playSound("DSound.wav");
 }
 
    		 // 17. ...use the playSound method to play a drum sound. Test to see if it works
