@@ -1,0 +1,11 @@
+1. food("apple");
+
+2. truth(4);
+
+3. for (int i = 0; i < 4; i++) {
+	drawLine();
+}
+	
+4. jump(6);
+
+5. jump(String obstacle)
